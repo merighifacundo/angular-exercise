@@ -1,0 +1,9 @@
+<div class="filterContainer">
+    <select [(ngModel)]="filterField" name="" id="">
+    <option value="distance">distance</option>
+    <option value="duration">duration</option>
+    </select>
+    <input type="number" [(ngModel)]="filterValue"/>
+    <button (click)="emitFilter()">Filter</button>
+    <button class="clear-btn" *ngIf="filterField" (click)="clearFilter()">Clear filter</button>
+</div>
