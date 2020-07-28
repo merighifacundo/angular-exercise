@@ -8,15 +8,12 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
- 
+
 </style>
 
-<div>
-  <div class="filterContainer">
-  <input [(ngModel)]="filterField"/>
-  <input [(ngModel)]="filterValue"/>
-  <button (click)="doFilter()">Filter</button>
-</div>
+<div class="content">
+  <span>{{ title }} app is running!</span>
+<app-filter (doFilter)="doFilter($event)"></app-filter>
   <table class="blueTable">
     <thead>
       <tr>
@@ -33,7 +30,7 @@
       <td>{{getPace(activity)}}</td>
     </tr>
   </table>
- 
+
 </div>
 
 
