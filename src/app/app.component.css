@@ -31,7 +31,7 @@ table.blueTable {
   table.blueTable thead th:first-child {
     border-left: none;
   }
-  
+
   table.blueTable tfoot {
     font-size: 14px;
     font-weight: bold;
@@ -55,7 +55,4 @@ table.blueTable {
     padding: 2px 8px;
     border-radius: 5px;
   }
-  .filterContainer {
-      padding: 5px;
-      border: 1px;
-  }
+

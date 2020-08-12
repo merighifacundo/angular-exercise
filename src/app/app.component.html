@@ -8,15 +8,12 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
- 
-</style>
 
+</style>
+<app-filter-activities [activities]="activities"
+                       (activitiesChange)="onActivitiesFiltered($event)">
+</app-filter-activities>
 <div>
-  <div class="filterContainer">
-  <input [(ngModel)]="filterField"/>
-  <input [(ngModel)]="filterValue"/>
-  <button (click)="doFilter()">Filter</button>
-</div>
   <table class="blueTable">
     <thead>
       <tr>
@@ -33,7 +30,6 @@
       <td>{{getPace(activity)}}</td>
     </tr>
   </table>
- 
 </div>
 
 

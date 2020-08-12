@@ -1,0 +1,13 @@
+<div class="filterContainer">
+  <select name="options"
+          id="options"
+          [(ngModel)]="filterField">
+    <option value="all">All</option>
+    <option value="distance">Distance</option>
+    <option value="minutes">Minutes</option>
+  </select>
+  <input type="number"
+         [disabled]="filterField === 'all'"
+         [(ngModel)]="filterValue"/>
+  <button (click)="onFilterActivities()">Filter</button>
+</div>
